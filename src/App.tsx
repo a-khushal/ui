@@ -10,7 +10,7 @@ function BookCover({ title, author, image }: {
 
   return (
     <div
-      className="relative h-65 w-40"
+      className="relative h-70 w-45"
       style={{ perspective: '800px' }}
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
@@ -28,7 +28,7 @@ function BookCover({ title, author, image }: {
           damping: 90,
         }}
       >
-        <h1 className="ml-1 text-black font-black text-sm text-center leading-tight mb-1">
+        <h1 className="text-black font-black text-sm text-center leading-tight mb-1">
           {title}
         </h1>
         <p className="text-gray-500 font-medium text-xs text-center">
@@ -78,7 +78,7 @@ function BookCover({ title, author, image }: {
 function App() {
   return (
     <div className="h-screen w-screen flex justify-center items-center">
-      <div className="flex justify-center items-center gap-5 px-15 py-20 border border-gray-600/30 rounded-3xl">
+      <div className="flex justify-center items-center gap-6 px-15 py-20 border border-gray-500/30 rounded-3xl">
         <BookCover
           title="Metamorphosis"
           author="Franz Kafka"
